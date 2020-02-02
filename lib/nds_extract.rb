@@ -12,9 +12,9 @@ def directors_totals(nds)
       result[d_name] += nds[row_index][:movies][column_index][:worldwide_gross]
       else result[d_name] = nds[row_index][:movies][column_index][:worldwide_gross]
       end
-      binding.pry
     column_index += 1
     end
+    binding.pry
   row_index += 1
   end
 return result
