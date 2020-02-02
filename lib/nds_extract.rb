@@ -9,8 +9,8 @@ def directors_totals(nds)
     column_index = 0
     while column_index < nds[row_index][:movies].length do
       if result[d_name]
-        binding.pry
       result[d_name] += nds[row_index][:movies][column_index][:worldwide_gross]
+      binding.pry
       else result[d_name] = nds[row_index][:movies][column_index][:worldwide_gross]
       end
     column_index += 1
